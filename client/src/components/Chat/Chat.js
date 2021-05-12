@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 
 let socket;
 
-const Chat = () => {
+const Chat = ({location}) => {
     const [name,setName] = useState("");
     const [room,setRoom] = useState("");
     const ENDPOINT = 'localhost:5000';
